@@ -1,19 +1,18 @@
 import './App.css';
 import React, { Suspense } from 'react';
 import Navigation from './Components/Navigation';
+import LandingPage from './Components/LandingPage';
+import AboutPage from './Components/AboutPage';
+import CompanyMission from './Components/CompanyValues';
+import CompanyValues from './Components/CompanyValues';
+import JkanticWork from './Components/JkanticWork';
+import JkanticReviews from './Components/ReviewsPage';
 
 function App() {
-  const LandingPage = React.lazy(() => import('./Components/LandingPage'));
-  const AboutPage = React.lazy(() => import('./Components/AboutPage'));
-  const CompanyMission = React.lazy(() => import('./Components/CompanyMission'));
-  const CompanyValues = React.lazy(() => import('./Components/CompanyValues'));
-  const JkanticWork = React.lazy(() => import('./Components/JkanticWork'));
-  const JkanticReviews = React.lazy(() => import('./Components/ReviewsPage'));
 
   return (
     <div className="App">
       <Navigation />
-      <Suspense fallback={<div>Loading...</div>}>
         <section id="home">
 
           <LandingPage />
@@ -46,7 +45,7 @@ function App() {
           <JkanticReviews />
 
         </section>
-      </Suspense>
+ 
     </div>
   );
 }
