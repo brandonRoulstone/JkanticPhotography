@@ -135,6 +135,11 @@
   flex-direction: column;
 }
 
+#newGrid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 #CompanySection{
   display: flex;
   justify-content: center;
@@ -148,6 +153,14 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  flex-direction: column;
+}
+
+#companyService{
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -238,6 +251,11 @@
 
 #userRating{
   display: flex;
+}
+
+#userTxt{
+  max-height: 85px !important;
+  overflow: scroll !important;
 }
 
 #stars{

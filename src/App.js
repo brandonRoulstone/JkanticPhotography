@@ -1,5 +1,4 @@
 import './App.css';
-import React, { Suspense } from 'react';
 import Navigation from './Components/Navigation';
 import LandingPage from './Components/LandingPage';
 import AboutPage from './Components/AboutPage';
@@ -7,6 +6,7 @@ import CompanyMission from './Components/CompanyValues';
 import CompanyValues from './Components/CompanyValues';
 import JkanticWork from './Components/JkanticWork';
 import JkanticReviews from './Components/ReviewsPage';
+import CompanyServices from './Components/CompanyServices';
 
 function App() {
 
@@ -43,6 +43,11 @@ function App() {
         <section id="Reviews">
 
           <JkanticReviews />
+
+        </section>
+        <section id="Services">
+
+          <CompanyServices />
 
         </section>
  
