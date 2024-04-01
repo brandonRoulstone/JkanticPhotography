@@ -1,23 +1,52 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { Suspense } from 'react';
+import Navigation from './Components/Navigation';
 
 function App() {
+  const LandingPage = React.lazy(() => import('./Components/LandingPage'));
+  const AboutPage = React.lazy(() => import('./Components/AboutPage'));
+  const CompanyMission = React.lazy(() => import('./Components/CompanyMission'));
+  const CompanyValues = React.lazy(() => import('./Components/CompanyValues'));
+  const JkanticWork = React.lazy(() => import('./Components/JkanticWork'));
+  const JkanticReviews = React.lazy(() => import('./Components/ReviewsPage'));
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigation />
+      <Suspense fallback={<div>Loading...</div>}>
+        <section id="home">
+
+          <LandingPage />
+
+        </section>
+  
+        <section id="about">
+
+          <AboutPage />
+
+        </section>
+  
+        <section id="ourMission">
+
+          <CompanyMission />
+
+        </section>
+        <section id="ourValues">
+
+          <CompanyValues />
+
+        </section>
+        <section id="OurWork">
+
+          <JkanticWork />
+
+        </section>
+        <section id="Reviews">
+
+          <JkanticReviews />
+
+        </section>
+      </Suspense>
     </div>
   );
 }

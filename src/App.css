@@ -1,38 +1,351 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Mada:wght@200..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: mada;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --JkanticWhite: rgb(244, 241, 241);
+  --JkanticNormalWhite: #ffffff;
+  --JkanticGray: #8e8e8e;
+  --vanillaBlac: black;
+  --rgbaBlac1: rgba(0, 0, 0, 0.44);
+  --rgbaBlac2: rgba(0, 0, 0, 0.603);
+  --rgbaBlac3:  rgba(0, 0, 0, 0.688);
+  --rgbaBlac4:  rgba(0, 0, 0, 0.212);
+  --bgImg:  url('https://cdn-images.imagevenue.com/06/39/d0/ME17UYLA_o.jpg');
+}
+
+#logo{
+  background-color: var(--vanillaBlac);
+  box-shadow: 3px 0.2px 5px 1px var(--rgbaBlac1);
+  transition: all 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+#logo:hover{
+  transform: scale(95%);
+  transition: all 0.3s ease-in-out;
+}
+
+#madaFont{
+  font-weight: 300;
+  letter-spacing: 0.4em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+#navbar{
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  z-index: 30;
+  background: linear-gradient(var(--rgbaBlac2),var(--rgbaBlac3)) !important;
+}
+
+[data-nav] {
+  color: var(--JkanticGray);
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 500ms;
+  transition-property: color;
+}
+
+[data-nav]:focus,
+[data-nav]:hover {
+  color: var(--JkanticNormalWhite);
+}
+
+[data-nav]:focus:after,
+[data-nav]:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+[data-nav]:after {
+  content: "";
   pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: var(--JkanticNormalWhite);
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+[data-nav]:active{
+ color: var(--JkanticNormalWhite);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+#landingPageJsx{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: var(--bgImg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.688));
+}
+
+#btn{
+  border: 1px solid var(--JkanticNormalWhite);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+#aboutPage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('https://i.postimg.cc/rVpkLfHM/pexels-valery-anatolievich-17809187.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#companyHistory, #companyWork{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+#ReviewsSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#CompanySection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to left, black 60%, white 30%);
+}
+
+#CompanyValues{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#boxx{
+  background-color: var(--JkanticWhite);
+  box-shadow: 1px 1px 4px 3px var(--rgbaBlac4);
+}
+
+#divider{
+  height: 15px;
+  width: 30%;
+  background-color: var(--vanillaBlac);
+}
+
+#borderLeft{
+  border-left: 10px solid var(--vanillaBlac);
+}
+
+#image{
+  height: 500px !important;
+  min-width: 500px !important;
+}
+
+#styleTxt{
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#offcan{
+  cursor: pointer;
+}
+
+#heightVh{
+  min-height: 100vh !important;
+  display: flex;
+}
+
+#flex{
+  display: flex;
+}
+
+#divamation{
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  left: 12%;
+  transform: translateY(78px);
+  border: 10px solid var(--vanillaBlac);
+  transition: all 1s ease-in-out !important;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#divamation:hover::after{
+  content: "Jkantic work";
+  height: 100%;
+  width: 100% !important;
+  position: absolute;
+  font-weight: 800;
+  font-size: 25px;
+  transition: all 1s ease-in-out !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(245, 245, 245, 0.068);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#centerBody{
+  display: flex;
+  justify-content: center;
+}
+
+#card{
+  display: flex;
+  max-width: 500px;
+  background: linear-gradient(rgb(192, 192, 241), lightblue);
+  color: var(--vanillaBlac);
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.346);
+}
+
+#profileImage{
+  border-radius: 50%;
+}
+
+#userRating{
+  display: flex;
+}
+
+#stars{
+  display: flex;
+  justify-content: start;
+}
+
+.rating:not(:checked) > input {
+  position: absolute;
+  appearance: none;
+}
+
+.rating:not(:checked) > label {
+float: right;
+cursor: pointer;
+font-size: 15px;
+}
+
+.rating:not(:checked) > label:before {
+content: '★';
+color: #ffa723;
+}
+
+.rating, label {
+color: #ffa723;
+}
+
+@media (max-width: 1080px) {
+  #divamation{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    left: 12%;
+    transform: translateY(-5px);
+    border: 10px solid var(--vanillaBlac);
+    transition: all 1s ease-in-out !important;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width: 994px) {
+  #divamation{
+    display: none;
+  }
+}
+
+@media (max-width: 780px) {
+  #navbar{
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 30;
+    background: var(--JkanticNormalWhite) !important;
+  }
+
+  #divamation{
+    display: none;
+  }
+
+  #logo{
+    height: 100px;
+    width: 100px;
+  }
+
+  #mediaQ{
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  #mediaImg{
+    width: 100%;
+    padding: 10px;
+  }
+
+  #textVisualOne h1:nth-child(1), 
+  #textVisualTwo h1:nth-child(1),
+  #textVisualOne p:nth-child(3), 
+  #textVisualTwo p:nth-child(3) {
+    background: var(--vanillaBlac);
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 580px) {
+  #borderLeft{
+    border-left: none;
+  }
+  #madaFont{
+    letter-spacing: 0.12em;
+  }
+  #logo{
+    height: 80px;
+    width: 80px;
+  }
+
+  #mediaQ{
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  #mediaTxt{
+    font-size: 25px !important;
+    text-align: center !important;
+  }
+
+  #textVisualOne h1:nth-child(1), 
+  #textVisualTwo h1:nth-child(1),
+  #textVisualOne p:nth-child(3), 
+  #textVisualTwo p:nth-child(3) {
+    background: var(--vanillaBlac);
+    padding-left: 20px;
   }
 }
