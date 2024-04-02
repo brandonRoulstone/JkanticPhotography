@@ -2,7 +2,7 @@ import './App.css';
 import Navigation from './Components/Navigation';
 import LandingPage from './Components/LandingPage';
 import AboutPage from './Components/AboutPage';
-import CompanyMission from './Components/CompanyValues';
+import CompanyMission from './Components/CompanyMission';
 import CompanyValues from './Components/CompanyValues';
 import JkanticWork from './Components/JkanticWork';
 import JkanticReviews from './Components/ReviewsPage';
