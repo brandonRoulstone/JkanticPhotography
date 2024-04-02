@@ -14,7 +14,7 @@ const AboutPage = () => {
 
             <div id="boxx" className="px-5 col-lg-6 col-sm-12 m-2 text-center">
                 <div className="d-flex justify-content-center">
-                <DividerLine />
+                <DividerLine dividerWidth={30}/>
                 </div>
                 <div className="py-5">
                     <h1>WHAT DO WE DO?</h1>

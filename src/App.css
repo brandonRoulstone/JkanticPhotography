@@ -45,10 +45,12 @@
   top: 0%;
   z-index: 30;
   background: linear-gradient(var(--rgbaBlac2),var(--rgbaBlac3)) !important;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 [data-nav] {
-  color: var(--JkanticGray);
+  color: var(--JkanticWhite);
   font-family: inherit;
   font-weight: 700;
   cursor: pointer;
@@ -159,9 +161,32 @@
 #companyService{
   display: flex;
   justify-content: center;
+  flex-direction: row;
+  background: white;
+  padding: 10em;
+  border-radius: 30px;
+  box-shadow: inset 10px 20px 100px 20px rgba(174, 174, 174, 0.897), 10px 10px 100px 10px rgba(0, 0, 0, 0.573);
+}
+
+#product{
+  background: rgb(0, 0, 0);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  color: var(--JkanticNormalWhite);
+}
+
+#priceTag{
+  background: var(--vanillaBlac);
+  border-radius: 10px;
+  padding-right: 0.4em;
+  color: var(--JkanticNormalWhite);
+}
+
+#companyServ{
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 #boxx{
@@ -238,8 +263,8 @@
 #card{
   display: flex;
   max-width: 500px;
-  background: linear-gradient(rgb(192, 192, 241), lightblue);
-  color: var(--vanillaBlac);
+  background: linear-gradient(rgb(0, 0, 0), rgb(19, 19, 19));
+  color: var(--JkanticNormalWhite);
   padding: 2em;
   border-radius: 10px;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.346);
@@ -269,18 +294,18 @@
 }
 
 .rating:not(:checked) > label {
-float: right;
-cursor: pointer;
-font-size: 15px;
+  float: right;
+  cursor: pointer;
+  font-size: 15px;
 }
 
 .rating:not(:checked) > label:before {
-content: '★';
-color: #ffa723;
+  content: '★';
+  color: #ffa723;
 }
 
 .rating, label {
-color: #ffa723;
+  color: #ffa723;
 }
 
 @media (max-width: 1080px) {
@@ -308,6 +333,12 @@ color: #ffa723;
     z-index: 30;
     background: var(--JkanticNormalWhite) !important;
   }
+
+  #newGrid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
 
   #divamation{
     display: none;
@@ -354,8 +385,40 @@ color: #ffa723;
     flex-direction: column !important;
   }
 
+  #card{
+    display: flex;
+    max-width: 500px;
+    background: linear-gradient(rgb(192, 192, 241), lightblue);
+    color: var(--vanillaBlac);
+    padding: 0.5em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.346);
+  }
+  
+  #userRating{
+    display: flex;
+    font-size: 9px
+  }
+  
+  #userTxt{
+    max-height: 85px !important;
+    font-size: smaller;
+    overflow: scroll !important;
+  }
+
+  #companyService{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    box-shadow: none;
+    background: none;
+    flex-direction: column !important;
+  }
+
   #mediaTxt{
-    font-size: 25px !important;
+    font-size: 15px !important;
     text-align: center !important;
   }
 

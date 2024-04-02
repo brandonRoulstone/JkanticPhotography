@@ -1,5 +1,4 @@
-
-const DividerLine = () => {
+const DividerLine = ({dividerWidth}) => {
   return (
     <div id="divider">
       
