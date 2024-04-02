@@ -334,6 +334,10 @@
     background: var(--JkanticNormalWhite) !important;
   }
 
+  [data-nav]{
+    color: var(--vanillaBlac);
+  }
+
   #newGrid{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
