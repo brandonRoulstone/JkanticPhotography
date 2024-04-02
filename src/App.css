@@ -343,6 +343,16 @@
     grid-template-columns: repeat(1, 1fr);
   }
   
+  #companyService{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    box-shadow: none;
+    background: none;
+    flex-direction: column !important;
+  }
 
   #divamation{
     display: none;
