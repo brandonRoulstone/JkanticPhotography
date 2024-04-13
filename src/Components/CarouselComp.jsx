@@ -41,8 +41,8 @@ const CarouselComp = () => {
               </p>
             </div>
             <div className='d-flex justify-content-center my-2'>
-              <a href="Reviews">
-               <button className="btn text-white">Client Reviews</button>
+              <a href="#Reviews" className="btn text-white">
+               Client Reviews
               </a>
             </div>
             </div>
@@ -57,8 +57,8 @@ const CarouselComp = () => {
               </p>
             </div>
             <div className='d-flex justify-content-center my-2'>
-              <a href="Reviews">
-               <button className="btn text-white">Client Reviews</button>
+              <a href="#Reviews" className="btn text-white">
+               Client Reviews
               </a>
             </div>
             </div>
@@ -73,8 +73,8 @@ const CarouselComp = () => {
               </p>
             </div>
             <div className='d-flex justify-content-center my-2'>
-             <a href="Reviews">
-               <button className="btn text-white">Client Reviews</button>
+             <a href="#Reviews" className="btn text-white">
+               Client Reviews
               </a>
             </div>
             </div>
@@ -89,8 +89,8 @@ const CarouselComp = () => {
              </p>
             </div>
             <div className='d-flex justify-content-center my-2'>
-              <a href="Reviews">
-               <button className="btn text-white">Client Reviews</button>
+              <a href="#Reviews" className="btn text-white">
+               Client Reviews
               </a>
             </div>
           </div>
