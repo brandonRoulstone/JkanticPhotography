@@ -3,7 +3,12 @@
   margin: 0;
   padding: 0;
   font-family: mada;
+  transition: all 0.5s ease-in-out;
+}
+
+body{
   scroll-behavior: smooth;
+  transition: all 1.5s ease-in-out !important;
 }
 
 :root{
@@ -15,28 +20,31 @@
   --rgbaBlac2: rgba(0, 0, 0, 0.603);
   --rgbaBlac3:  rgba(0, 0, 0, 0.688);
   --rgbaBlac4:  rgba(0, 0, 0, 0.212);
-  --bgImg:  url('https://cdn-images.imagevenue.com/06/39/d0/ME17UYLA_o.jpg');
+  --bgImg:  url('https://cdn-images.imagevenue.com/e8/a8/ff/ME180KM1_o.png');
+}
+
+#pos{
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 #logo{
   background-color: var(--vanillaBlac);
-  box-shadow: 3px 0.2px 5px 1px var(--rgbaBlac1);
   transition: all 0.3s ease-in-out;
+  mix-blend-mode: difference;
+  border-left: 5px solid white;
 }
 
 ::-webkit-scrollbar{
   display: none;
 }
 
-#logo:hover{
-  transform: scale(95%);
-  transition: all 0.3s ease-in-out;
-}
-
 #madaFont{
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: 0.4em;
   text-align: center;
+  color: rgb(0, 0, 0);
 }
 
 #navbar{
@@ -44,15 +52,38 @@
   width: 100%;
   top: 0%;
   z-index: 30;
-  background: linear-gradient(var(--rgbaBlac2),var(--rgbaBlac3)) !important;
+  /* background: linear-gradient(var(--rgbaBlac2),var(--rgbaBlac3)) !important; */
+  background: rgba(0, 0, 0, 0) !important;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
 }
 
+#navLogo{
+  display: flex;
+  justify-content: center;
+  flex-direction: column !important;
+}
+
+#navLogo span{
+  font-weight: 500;
+}
+
+#mediaResponsiveLogo{
+  display: none;
+}
+
+#difference{
+  mix-blend-mode: difference;
+  background-color: black;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+
 [data-nav] {
-  color: var(--JkanticWhite);
+  color: var(--vanillaBlac) !important;
   font-family: inherit;
-  font-weight: 700;
+  font-weight: 400 !important;
   cursor: pointer;
   position: relative;
   border: none;
@@ -82,7 +113,7 @@
   position: absolute;
   width: 0%;
   height: 2px;
-  background-color: var(--JkanticNormalWhite);
+  background-color: var(--vanillaBlac);
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: width, left;
@@ -90,56 +121,138 @@
 
 [data-nav]:active{
  color: var(--JkanticNormalWhite);
+ transform: translateY(5px);
+ transition: all 0.2s ease-in;
 }
 
 
 #landingPageJsx{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row-reverse;
   min-height: 100vh;
   background-image: var(--bgImg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.688));
+  background-attachment: fixed;
+  border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.183));
 }
 
-#btn{
-  border: 1px solid var(--JkanticNormalWhite);
+#position{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+}
+
+.typer{
+  text-align: start !important;
+  color: var(--vanillaBlac);
+}
+
+/* #btn{
+  border: 1px solid var(--vanillaBlac);
+  background-color: gray;
+  color: var(--JkanticNormalWhite) !important;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+} */
+
+/* #btn {
+  --color1: #000000;
+  --color2: #3a3a3a;
+  perspective: 1000px;
+  padding: 1em 1em;
+  background: linear-gradient(var(--color1), var(--color2));
+  border: none;
+  outline: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #fff !important;
+  text-shadow: 0 10px 10px #000;
+  cursor: pointer;
+  transform: rotateX(70deg) rotateZ(30deg);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
 }
+
+#btn::before {
+  content: "";
+  width: 100%;
+  height: 15px;
+  background-color: var(--color2);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotateX(90deg);
+  transform-origin: bottom;
+}
+
+#btn::after {
+  content: "";
+  width: 15px;
+  height: 100%;
+  background-color: var(--color1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotateY(-90deg);
+  transform-origin: right;
+}
+
+#btn:hover {
+  transform: rotateX(30deg) rotateZ(0);
+} */
 
 #aboutPage{
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url('https://i.postimg.cc/rVpkLfHM/pexels-valery-anatolievich-17809187.jpg');
+  background-color: rgb(255, 255, 255);
+  /* background-image: url('https://i.postimg.cc/rVpkLfHM/pexels-valery-anatolievich-17809187.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed; */
 }
 
-#companyHistory, #companyWork{
+#companyWork{
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
+
+#companyHistory{
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
+
+#imgResponsive{
+  height: 500px !important;
+  width: 500px !important;
+  object-fit: cover;
+  image-rendering: optimizeQuality;
+}
+
 #ReviewsSection{
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 40vh;
   flex-direction: column;
 }
 
 #newGrid{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 #CompanySection{
@@ -239,6 +352,55 @@
   color: white;
 }
 
+.mySwiper{
+  text-align: center;
+  color: var(--vanillaBlac) !important;
+  border-radius: 10px !important;
+}
+
+.slide{
+  border-radius: 10px !important;
+}
+
+#textOver{
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+}
+
+#textOver a{
+  border: 1px solid var(--JkanticNormalWhite);
+  color: #ffffff;
+  font-size: large;
+  width: 30%;
+}
+
+#fluidImg{
+  object-fit: contain !important;
+  width: 100%;
+  image-rendering: crisp-edges;
+}
+
+#fluidvid{
+  object-fit: contain !important;
+  width: 100%;
+}
+
+.slide:nth-child(1),
+.slide:nth-child(2),
+.slide:nth-child(3),
+.slide:nth-child(4),
+.slide:nth-child(5)
+{
+  background-color: rgb(255, 255, 255);
+  height: 700px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #divamation:hover::after{
   content: "Jkantic work";
   height: 100%;
@@ -260,14 +422,45 @@
   justify-content: center;
 }
 
+#imgbox{
+  overflow: hidden;
+}
+
+#styledProps{
+  letter-spacing: 10px;
+  /* word-spacing: 10px; */
+}
+
+#popper{
+  position: absolute;
+}
+
+#fmt h2{
+  font-weight: 300 !important;
+  color: var(--vanillaBlac) !important;
+}
+
+#button{
+  border-bottom: 1px solid black;
+  border-radius: 0px !important;
+  padding-left: 0px !important;
+  padding-bottom: 0px !important;
+  font-weight: 300;
+}
+
+#button:hover{
+  color: #8e8e8e;
+  border-bottom: 1px solid #8e8e8e;
+}
+
 #card{
   display: flex;
   max-width: 500px;
-  background: linear-gradient(rgb(0, 0, 0), rgb(19, 19, 19));
-  color: var(--JkanticNormalWhite);
+  background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+  color: var(--vanillaBlac);
   padding: 2em;
-  border-radius: 10px;
-  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.346);
+  /* border-radius: 10px; */
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.213);
 }
 
 #profileImage{
@@ -334,6 +527,62 @@
     background: var(--JkanticNormalWhite) !important;
   }
 
+  #navLogo{
+    display: none !important;
+  }
+
+  #mediaResponsiveLogo{
+    display: block;
+    margin-top: 10px;
+    position: absolute;
+    text-align: center;
+    letter-spacing: 10px;
+    font-weight: 600;
+    text-transform: uppercase !important;
+    color: black;
+    width: 100%;
+  }
+
+  #fluidvid{
+    object-fit: cover !important;
+    width: 100%;
+    height: 100% !important;
+  }
+
+  #btn{
+    color: var(--JkanticNormalWhite) !important;
+    border-top: 1px solid var(--JkanticNormalWhite);
+    border-bottom: 1px solid var(--JkanticNormalWhite);
+  }
+
+  #logo{
+    border-bottom: 2px solid white;
+    mix-blend-mode: normal;
+    background: none;
+  }
+
+
+  #landingPageJsx{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column-reverse;
+    min-height: 100vh;
+    background-color: #ffffff;
+    border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0.221), rgba(0, 0, 0, 0.333));
+  }
+
+  .typer{
+    font-size: 25px !important;
+    text-align: center !important;
+    color: var(--JkanticNormalWhite);
+    font-weight: bolder;
+  }
+
+  #madaFont{
+    color: white;
+  }
+
   [data-nav]{
     color: var(--vanillaBlac);
   }
@@ -359,8 +608,7 @@
   }
 
   #logo{
-    height: 100px;
-    width: 100px;
+    border-left: none;
   }
 
   #mediaQ{
@@ -389,23 +637,70 @@
   #madaFont{
     letter-spacing: 0.12em;
   }
-  #logo{
+
+  #navLogo{
+    display: none !important;
+  }
+
+  /* #textOver{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+  } */
+  
+  /* #textOver a{
+    border: 1px solid var(--JkanticNormalWhite);
+    color: #000000 !important;
+    font-size: large;
+    width: 30%;
+  } */
+
+  #mediaResponsiveLogo{
+    position: absolute;
+    text-align: center;
+    letter-spacing: 10px;
+    font-weight: 600;
+    text-transform: uppercase !important;
+    color: black;
+    width: 100%;
+  }
+
+  #companyHistory{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+  }
+  /* #logo{
     height: 80px;
     width: 80px;
+  } */
+
+  #fluidvid{
+    object-fit: cover !important;
+    width: 100%;
+    height: 61% !important;
   }
 
   #mediaQ{
     display: flex;
     flex-direction: column !important;
   }
+  #shrinkTxt{
+    font-size: 14px !important;
+  }
 
   #card{
     display: flex;
     max-width: 500px;
-    background: linear-gradient(rgb(192, 192, 241), lightblue);
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
     color: var(--vanillaBlac);
+    text-align: justify;
     padding: 0.5em;
-    border-radius: 10px;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.346);
   }
   
@@ -443,4 +738,39 @@
     background: var(--vanillaBlac);
     padding-left: 20px;
   }
+
+  .typer{
+    font-size: 15px !important;
+    text-align: center !important;
+    color: var(--JkanticNormalWhite);
+    font-weight: bolder;
+  }
 }
+
+
+
+/* .parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.parallax-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background-image: url('https://i.postimg.cc/R0yvRRkw/JKantic-Logo-3.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.parallax-content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-top: 50vh;
+} */

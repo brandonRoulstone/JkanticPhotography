@@ -2,11 +2,12 @@ import './App.css';
 import Navigation from './Components/Navigation';
 import LandingPage from './Components/LandingPage';
 import AboutPage from './Components/AboutPage';
-import CompanyMission from './Components/CompanyMission';
-import CompanyValues from './Components/CompanyValues';
-import JkanticWork from './Components/JkanticWork';
+// import CompanyMission from './Components/CompanyMission';
+// import CompanyValues from './Components/CompanyValues';
+// import JkanticWork from './Components/JkanticWork';
+// import CompanyServices from './Components/CompanyServices';
 import JkanticReviews from './Components/ReviewsPage';
-import CompanyServices from './Components/CompanyServices';
+import '@coreui/coreui/dist/css/coreui.min.css';
 
 function App() {
 
@@ -25,7 +26,7 @@ function App() {
 
         </section>
   
-        <section id="ourMission">
+        {/* <section id="ourMission">
 
           <CompanyMission />
 
@@ -34,22 +35,24 @@ function App() {
 
           <CompanyValues />
 
-        </section>
-        <section id="OurWork">
+        </section> */}
+        {/* <section id="OurWork">
 
           <JkanticWork />
 
-        </section>
+        </section> */}
         <section id="Reviews">
+
+          <h1 className="text-center">Client Reviews</h1>
 
           <JkanticReviews />
 
         </section>
-        <section id="Services">
+        {/* <section id="Services">
 
           <CompanyServices />
 
-        </section>
+        </section> */}
  
     </div>
   );
