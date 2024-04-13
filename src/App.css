@@ -235,6 +235,23 @@ body{
   gap: 30px;
 }
 
+[data-reviewsHeader]{
+  text-align: center;
+}
+#boxSvg{
+  background-color: white;
+  border-radius: 50%;
+}
+
+#reviewBtn{
+  --google_blue : blue;
+  --google_white :rgb(255, 255, 255);
+  background-color: var(--google_blue);
+  border: none;
+  color: var(--google_white) !important;
+
+}
+
 #imgResponsive{
   height: 500px !important;
   width: 500px !important;
