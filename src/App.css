@@ -213,11 +213,6 @@ body{
   align-items: center;
   min-height: 100vh;
   background-color: rgb(255, 255, 255);
-  /* background-image: url('https://i.postimg.cc/rVpkLfHM/pexels-valery-anatolievich-17809187.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; */
 }
 
 #companyWork{
@@ -225,7 +220,53 @@ body{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  flex-direction: row !important;
 }
+
+#bcgImg1{
+  height: 600px;
+  width: 600px;
+  margin: 10px;
+  object-fit: cover;
+  background-image: url('https://cdn-images.imagevenue.com/c9/e9/93/ME182OHL_o.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+#bcgImg2{
+  height: 600px;
+  width: 600px;
+  margin: 10px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+#custom{
+  color: var(--JkanticNormalWhite);
+  font-weight: 300;
+  text-align: end !important;
+  width: 100%;
+  text-decoration: line-through;
+}
+#custom:hover{
+  text-decoration: none;
+  transition: 0.4s ease-in-out !important;
+  color: var(--JkanticGray);
+  cursor: pointer;
+}
+
+[data-blur]{
+  -webkit-backdrop-filter: blur(10px) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+#br{
+  border-right: 3px solid rgb(255, 255, 255);
+  margin-top: 5px;
+}
+
 
 #companyHistory{
   min-height: 100vh;
@@ -238,6 +279,7 @@ body{
 [data-reviewsHeader]{
   text-align: center;
 }
+
 #boxSvg{
   background-color: white;
   border-radius: 50%;
@@ -444,7 +486,7 @@ body{
 }
 
 #styledProps{
-  letter-spacing: 10px;
+  letter-spacing: 5px;
   /* word-spacing: 10px; */
 }
 
@@ -482,6 +524,7 @@ body{
 
 #profileImage{
   border-radius: 50%;
+  filter: grayscale();
 }
 
 #userRating{
@@ -542,6 +585,10 @@ body{
     top: 0%;
     z-index: 30;
     background: var(--JkanticNormalWhite) !important;
+  }
+
+  #bcgImg1, #bcgImg2{
+    width: auto;
   }
 
   #navLogo{
@@ -651,6 +698,18 @@ body{
   #borderLeft{
     border-left: none;
   }
+
+  #wrap{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #bcgImg1, #bcgImg2{
+    width: auto;
+    height: 500px;
+  }
+
   #madaFont{
     letter-spacing: 0.12em;
   }

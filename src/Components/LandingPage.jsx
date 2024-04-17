@@ -7,7 +7,7 @@ const LandingPage = () => {
         <TypeAnimation
           sequence={[
             // Same substring at the start will only be typed once, initially
-            'We promote proud african Brands.',
+            'Cultivating a world of proud African Brands.',
             1000,
             'We specialize in advertisement.',
             1000,

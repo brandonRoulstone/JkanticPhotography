@@ -14,7 +14,7 @@ const AboutPage = () => {
         <section id="aboutPage">
 
             <div className="container-fluid">
-             <CarouselComp className=""/>
+             <CarouselComp />
             </div>
 
 
@@ -90,7 +90,7 @@ const AboutPage = () => {
               
               <div id="imgbox">
               
-                <img className="img img-fluid" src="https://cdn-images.imagevenue.com/10/0c/ee/ME182KO4_o.jpg" alt="IMG-20240410-WA0023.jpg" id="imgResponsive" loading="lazy"/>
+                <img className="img img-fluid" src="https://cdn-images.imagevenue.com/a9/05/51/ME182OE5_o.jpg" alt="IMG-20240410-WA0007.jpg" id="imgResponsive" loading="lazy"/>
               
               </div>  
 
