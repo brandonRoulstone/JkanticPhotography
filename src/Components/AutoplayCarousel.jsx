@@ -5,6 +5,7 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const autoPlayCarousel = () => {
+  
   return (
     <>
       <Swiper

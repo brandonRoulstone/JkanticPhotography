@@ -10,79 +10,72 @@ const VideoComponent = () => {
   return (
     <div id="flex" className="mt-2 row">
         <video
-          controls             
-          width="50%"           
-          height="300px"          
+          controls
+          id="vidHeightWidth"                       
           autoplay              
           loop
-          className="mb-3 border border-black rounded-3 shadow border-3"                 
+          className="mb-3"                 
           muted       
           src={videoOne}
         >
         </video>
         <video
-          controls             
-          width="50%"           
-          height="300px"          
+          controls
+          id="vidHeightWidth"                       
           autoplay              
           loop
-          className="mb-3 border border-black rounded-3 shadow border-3"                 
+          className="mb-3"                 
           muted       
           src={videoTwo}
         >
         </video>
         <video
-          controls             
-          width="50%"           
-          height="300px"          
+          controls
+          id="vidHeightWidth"                       
           autoplay              
           loop
-          className="mb-3 border border-black rounded-3 shadow border-3"                 
+          className="mb-3"                 
           muted       
           src={videoThree}
         >
         </video>
         <video
-          controls             
-          width="50%"           
-          height="300px"          
+          controls
+          id="vidHeightWidth"                       
           autoplay              
           loop
-          className="mb-3 border border-black rounded-3 shadow border-3"                 
+          className="mb-3"                 
           muted       
           src={videoFour}
         >
         </video>
         {/* stretched video height is not consistent */}
         <video
-          controls             
-          width="50%"           
-          height="300px"          
+          controls
+          id="vidHeightWidth"                       
           autoplay              
           loop
-          className="mb-3 border border-black rounded-3 shadow border-3"                 
+          className="mb-3"                 
           muted       
           src={videoFive}
         >
         </video>
         <video
-          controls             
-          width="50%"           
-          height="300px"          
+          controls
+          id="vidHeightWidth"                       
           autoplay              
           loop
-          className="mb-3 border border-black rounded-3 shadow border-3"                 
+          className="mb-3"                 
           muted       
           src={videoSix}
         >
         </video>
         <video
-          controls             
-          width="50%"           
-          height="300px"          
+          controls
+          id="vidHeightWidth"                       
           autoplay              
           loop
-          className="mb-3 border border-black rounded-3 shadow border-3"                 
+          className="mb-3"                 
           muted       
           src={videoSeven}
         >

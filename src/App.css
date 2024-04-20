@@ -202,6 +202,12 @@ body{
   cursor: pointer;
 }
 
+#offcan{
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: rgba(255, 255, 255, 0);
+}
+
 [data-blur]{
   -webkit-backdrop-filter: blur(10px) !important;
   backdrop-filter: blur(10px) !important;
@@ -327,7 +333,81 @@ body{
 }
 
 #flex{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#vidHeightWidth{
+  object-fit: cover !important;
+  height: 600px;
+}
+
+@keyframes id {
+  from{
+    width: 0px;
+    opacity: 0;
+  }
+  to {
+    width: 70px;
+    opacity: 1;
+  }
+}
+
+#ic:nth-child(1):hover::after{
+  content: "instagram";
+  font-size: 10px;
+  color: var(--JkanticNormalWhite);
+  position: absolute;
+  height: 30px;
+  width: 70px;
+  margin-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  animation-name: id;
+  animation-duration: 0.3s;
+}
+
+#ic:nth-child(2):hover::after{
+  content: "Facebook";
+  font-size: 10px;
+  color: var(--JkanticNormalWhite);
+  position: absolute;
+  height: 30px;
+  width: 70px;
+  margin-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  animation-name: id;
+  animation-duration: 0.3s;
+}
+
+#ic:nth-child(3):hover::after{
+  content: "tikTok";
+  font-size: 10px;
+  color: var(--JkanticNormalWhite);
+  position: absolute;
+  height: 30px;
+  width: 70px;
+  margin-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  animation-name: id;
+  animation-duration: 0.3s;
 }
 
 #divamation{
@@ -448,7 +528,6 @@ body{
   background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
   color: var(--vanillaBlac);
   padding: 2em;
-  /* border-radius: 10px; */
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.213);
 }
 
@@ -519,6 +598,42 @@ body{
 
   #bcgImg1, #bcgImg2{
     width: auto;
+  }
+
+  #offcan{
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid var(--vanillaBlac);
+    width: 50%;
+  }
+  #offcan:active{
+    transition: all 0.2s ease-in-out;
+    transform: scale(90%);
+  }
+
+  #icons{
+    margin: 0% !important;
+  }
+  
+  #wrapBrands{
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+  }
+
+  #flex{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  #vidHeightWidth{
+    object-fit: cover !important;
+    height: 300px;
+  }
+  #vidHeightWidth:nth-child(1){
+    object-fit: cover !important;
+    height: 300px;
+    margin-top: 20px;
   }
 
   #navLogo{

@@ -32,7 +32,7 @@ const AboutPage = () => {
                 
                 <h2 className="small fs-4 mt-3">Photography</h2>
 
-                <a href="#home"><button className="btn mb-2" id="button">View Pricing</button></a>
+                <a href="#pricing"><button className="btn mb-2" id="button">View Pricing</button></a>
 
              </div>
 
@@ -52,7 +52,7 @@ const AboutPage = () => {
               
                 <h2 className="small fs-4 mt-3">Brand Marketing</h2>
               
-                <a href="#home"><button className="btn mb-2" id="button">View Pricing</button></a>
+                <a href="#pricing"><button className="btn mb-2" id="button">View Pricing</button></a>
               
               </div>
 
@@ -72,7 +72,7 @@ const AboutPage = () => {
                 
                     <h2 className="small fs-4 mt-3">Videography</h2>
 
-                    <a href="#home"><button className="btn mb-2" id="button">View Pricing</button></a>
+                    <a href="#pricing"><button className="btn mb-2" id="button">View Pricing</button></a>
                 
                 </div>
 
