@@ -64,7 +64,7 @@ const Navigation = () => {
                     <span>J K A N T I C</span>
                     </Nav>
                     <Nav className="text-center mx-auto fw-bold gap-3">
-                        <Nav.Link href="#Ourwork" id='styledProps' className='navKantic' data-nav>Our Work</Nav.Link>
+                        <Nav.Link href="#OurWork" id='styledProps' className='navKantic' data-nav>Our Work</Nav.Link>
                         <Nav.Link href="#Reviews" id='styledProps' className='navKantic' data-nav>Reviews</Nav.Link>
                         <Nav.Link href="#Contactus" id='styledProps' className='navKantic' data-nav>Contact us</Nav.Link>
                     </Nav>
