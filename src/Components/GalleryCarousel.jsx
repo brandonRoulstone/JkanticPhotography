@@ -37,30 +37,6 @@ const GalleryCarousel = () => {
                 <img src="https://cdn-images.imagevenue.com/08/df/ca/ME182DD7_o.jpg" alt="" className="img img-fluid" id="img" />
 
             </SwiperSlide>
-            {/* <SwiperSlide data-slide>
-                <img src="https://cdn-images.imagevenue.com/c9/e9/93/ME182OHL_o.jpg" alt="" className="img img-fluid" id="img" />
-
-            </SwiperSlide>
-            <SwiperSlide data-slide>
-
-                <img src="https://cdn-images.imagevenue.com/c9/e9/93/ME182OHL_o.jpg" alt="" className="img img-fluid" id="img" />
-
-            </SwiperSlide>
-            <SwiperSlide data-slide>
-
-                <img src="https://cdn-images.imagevenue.com/c9/e9/93/ME182OHL_o.jpg" alt="" className="img img-fluid" id="img" />
-
-            </SwiperSlide>
-            <SwiperSlide data-slide>
-
-                <img src="https://cdn-images.imagevenue.com/c9/e9/93/ME182OHL_o.jpg" alt="" className="img img-fluid" id="img" />
-
-            </SwiperSlide>
-            <SwiperSlide data-slide>
-
-                <img src="https://cdn-images.imagevenue.com/c9/e9/93/ME182OHL_o.jpg" alt="" className="img img-fluid" id="img" />
-
-            </SwiperSlide> */}
       </Swiper>
     </>
   )

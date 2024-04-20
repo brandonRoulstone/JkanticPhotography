@@ -24,18 +24,6 @@ const JkanticWork = () => {
                     </div>
                 
                     <video controls="false" autoplay loop muted src={videoMizuno} className="d-flex row" id="bcgImg2">
-                        {/* <div id="custom">
-
-                            <div id="br">
-                                <h4 className="px-2 pt-1">Welcome to Our gallery</h4>
-                                <br />
-                                <p className="px-2">Videography</p>
-                            </div>
-
-                            <button className="btn border text-white" data-blur>view our work</button>
-
-
-                        </div> */}
                     </video>
 
                 </div>

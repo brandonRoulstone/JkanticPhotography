@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 const ServiceSale = ({heading, title, productsInfo, price}) => {
   return (
     <div>
-      <Card border="info" style={{ width: '18rem', height: '20rem' }} className="m-2" id="product">
-        <Card.Header>{heading}</Card.Header>
+      <Card style={{ width: '20rem', height: '22rem' }} className="m-2" id="product">
+        <Card.Header className='w-100'>{heading}</Card.Header>
         <Card.Body>
           <Card.Title className="fs-4 fw-bold">{title}</Card.Title>
             <Card.Text className="h-50">

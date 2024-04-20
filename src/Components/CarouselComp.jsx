@@ -35,7 +35,7 @@ const CarouselComp = () => {
         <SwiperSlide className='slide'>
           <div id='textOver' className='display-4'>
             <div className='container'>
-              Brand Marketing
+              <h1>Brand Marketing</h1>
               <p className='small fs-5 px-3' id='shrinkTxt'>
                 Elevate your brand with captivating advertising content by JKantic.
               </p>
@@ -51,7 +51,7 @@ const CarouselComp = () => {
         <SwiperSlide className='slide'>
           <div id='textOver' className='display-4'>
             <div className='container'>
-              Photography
+              <h1>Photography</h1>
               <p className="small fs-5 px-3" id='shrinkTxt'>
                 Stunning photography services tailored for your brand's visual identity.
               </p>
@@ -67,7 +67,7 @@ const CarouselComp = () => {
         <SwiperSlide className='slide'>
           <div id='textOver' className='display-4'>
             <div className='container text-black'>
-             Marketing Excellence
+             <h1>Marketing Excellence</h1>
               <p className="small fs-5 px-3" id='shrinkTxt'>
                 Elevating brands through innovative marketing and social solutions.
               </p>
@@ -83,7 +83,7 @@ const CarouselComp = () => {
         <SwiperSlide className='slide'>
           <div id='textOver' className='display-4'>
             <div className='container'>
-             Videography
+             <h1>Videography</h1>
              <p className="small fs-5 px-3" id='shrinkTxt'>
               Dynamic videography to showcase your brand's story and products.
              </p>

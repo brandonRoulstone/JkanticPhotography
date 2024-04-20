@@ -152,61 +152,6 @@ body{
   color: var(--vanillaBlac);
 }
 
-/* #btn{
-  border: 1px solid var(--vanillaBlac);
-  background-color: gray;
-  color: var(--JkanticNormalWhite) !important;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-} */
-
-/* #btn {
-  --color1: #000000;
-  --color2: #3a3a3a;
-  perspective: 1000px;
-  padding: 1em 1em;
-  background: linear-gradient(var(--color1), var(--color2));
-  border: none;
-  outline: none;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  color: #fff !important;
-  text-shadow: 0 10px 10px #000;
-  cursor: pointer;
-  transform: rotateX(70deg) rotateZ(30deg);
-  transform-style: preserve-3d;
-  transition: transform 0.5s;
-}
-
-#btn::before {
-  content: "";
-  width: 100%;
-  height: 15px;
-  background-color: var(--color2);
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  transform: rotateX(90deg);
-  transform-origin: bottom;
-}
-
-#btn::after {
-  content: "";
-  width: 15px;
-  height: 100%;
-  background-color: var(--color1);
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: rotateY(-90deg);
-  transform-origin: right;
-}
-
-#btn:hover {
-  transform: rotateX(30deg) rotateZ(0);
-} */
-
 #aboutPage{
   display: flex;
   justify-content: center;
@@ -301,19 +246,6 @@ body{
   image-rendering: optimizeQuality;
 }
 
-#ReviewsSection{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 40vh;
-  flex-direction: column;
-}
-
-#newGrid{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
 #CompanySection{
   display: flex;
   justify-content: center;
@@ -332,33 +264,31 @@ body{
 
 #companyService{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: row;
   background: white;
+  gap: 48px;
   padding: 10em;
   border-radius: 30px;
-  box-shadow: inset 10px 20px 100px 20px rgba(174, 174, 174, 0.897), 10px 10px 100px 10px rgba(0, 0, 0, 0.573);
 }
 
 #product{
-  background: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
-  color: var(--JkanticNormalWhite);
+  color: var(--vanillaBlac);
 }
 
 #priceTag{
-  background: var(--vanillaBlac);
-  border-radius: 10px;
-  padding-right: 0.4em;
-  color: var(--JkanticNormalWhite);
+  background: var(--JkanticNormalWhite);
+  color: var(--vanillaBlac);
 }
 
 #companyServ{
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 #boxx{
@@ -650,11 +580,6 @@ body{
   [data-nav]{
     color: var(--vanillaBlac);
   }
-
-  #newGrid{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
   
   #companyService{
     min-height: 100vh;
@@ -662,6 +587,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 0;
+    gap: 0px;
     box-shadow: none;
     background: none;
     flex-direction: column !important;
@@ -691,6 +617,24 @@ body{
   #textVisualTwo p:nth-child(3) {
     background: var(--vanillaBlac);
     padding-left: 20px;
+  }
+
+  #wrap{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px !important;
+    flex-direction: row;
+    justify-content: center !important;
+  }
+
+  #bcgImg1{
+    width: 340px !important;
+    height: 400px !important;
+  } 
+
+  #bcgImg2{
+    width: 340px !important;
+    height: 400px !important;
   }
 }
 
@@ -756,10 +700,10 @@ body{
     width: 80px;
   } */
 
-  #fluidvid{
+  #fluidvid, #fluidImg{
     object-fit: cover !important;
     width: 100%;
-    height: 61% !important;
+    height: 81% !important;
   }
 
   #mediaQ{
@@ -796,9 +740,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
-    box-shadow: none;
-    background: none;
     flex-direction: column !important;
   }
 
@@ -821,6 +762,33 @@ body{
     color: var(--JkanticNormalWhite);
     font-weight: bolder;
   }
+
+  /* #slide{
+    height: 30rem;
+  } */
+}
+
+@media (max-width: 320px) {
+
+  #product{
+    width: 17.1rem !important;
+    height: 19rem !important;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    color: var(--vanillaBlac);
+  }
+  
+}
+@media (max-width: 290px) {
+
+  #product{
+    width: 15rem !important;
+    height: 19rem !important;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    color: var(--vanillaBlac);
+  }
+  
 }
 
 
