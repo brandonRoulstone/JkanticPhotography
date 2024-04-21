@@ -1,32 +1,32 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 const Navigation = () => {
-    const [scroll, setScroll] = useState();
+    // const [scroll, setScroll] = useState();
     
-    const windowScroll = () => {
-        window.addEventListener('scroll', () => {
-            const attr = document.getElementById("navbar");
-            let ev = attr.style = 'background: white !important'
-            setScroll(ev)
-        })
-    }
-    windowScroll();
+    // const windowScroll = () => {
+    //     window.addEventListener('scroll', () => {
+    //         const attr = document.getElementById("navbar");
+    //         let ev = attr.style = 'background: white !important'
+    //         setScroll(ev)
+    //     })
+    // }
+    // windowScroll();
 
-    const windowNotActive = () => {
-        window.addEventListener('scrollend', () => {
-            const attr = document.getElementById("navbar");
-            let ev = attr.style = 'background: rgba(0, 0, 0, 0) !important'
-            setScroll(ev)
-        })
-    }
-    windowNotActive();
+    // const windowNotActive = () => {
+    //     window.addEventListener('scrollend', () => {
+    //         const attr = document.getElementById("navbar");
+    //         let ev = attr.style = 'background: rgba(0, 0, 0, 0) !important'
+    //         setScroll(ev)
+    //     })
+    // }
+    // windowNotActive();
 
   return (
     <>
-        <Navbar expand="lg" className="py-2" id="navbar" {...scroll}>
+        <Navbar expand="lg" className="py-2" id="navbar">
             <Container>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
