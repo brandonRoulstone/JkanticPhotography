@@ -51,7 +51,7 @@ const Navigation = () => {
                     <Nav className="text-center mx-auto fw-bold gap-3">
                         <Nav.Link href="#home" id='styledProps' className='navKantic' data-nav>Home</Nav.Link>
                         <Nav.Link href="#about" id='styledProps' className='navKantic' data-nav>About us</Nav.Link>
-                        <Nav.Link href="#pricing" id='styledProps' className='navKantic' data-nav>Pricing</Nav.Link>
+                        <Nav.Link href="#OurWork" id='styledProps' className='navKantic' data-nav>Our Work</Nav.Link>
                     </Nav>
                     <Nav id='navLogo'>
                     <img
@@ -64,7 +64,7 @@ const Navigation = () => {
                     <span>J K A N T I C</span>
                     </Nav>
                     <Nav className="text-center mx-auto fw-bold gap-3">
-                        <Nav.Link href="#OurWork" id='styledProps' className='navKantic' data-nav>Our Work</Nav.Link>
+                        <Nav.Link href="#pricing" id='styledProps' className='navKantic' data-nav>Pricing</Nav.Link>
                         <Nav.Link href="#Reviews" id='styledProps' className='navKantic' data-nav>Reviews</Nav.Link>
                         <Nav.Link href="#Contactus" id='styledProps' className='navKantic' data-nav>Contact us</Nav.Link>
                     </Nav>
