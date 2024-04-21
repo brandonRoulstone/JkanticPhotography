@@ -25,7 +25,7 @@ const JkanticWork = () => {
                     </div>
 
                     <div>
-                        <video controls="false" autoplay loop muted src={videoMizuno} className="d-flex row" id="bcgImg2">
+                        <video controls autoPlay loop muted src={videoMizuno} className="d-flex row" id="bcgImg2">
                         </video>
                         <hr />
                         <div className="fs-4 d-flex justify-content-center" id="wrapBrands">

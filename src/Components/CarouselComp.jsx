@@ -95,7 +95,7 @@ const CarouselComp = () => {
             </div>
           </div>
           <video
-          autoplay              
+          autoPlay              
           loop
           controls                      
           muted       

@@ -12,7 +12,7 @@ const VideoComponent = () => {
         <video
           controls
           id="vidHeightWidth"                       
-          autoplay              
+          autoPlay              
           loop
           className="mb-3"                 
           muted       
@@ -22,7 +22,7 @@ const VideoComponent = () => {
         <video
           controls
           id="vidHeightWidth"                       
-          autoplay              
+          autoPlay              
           loop
           className="mb-3"                 
           muted       
@@ -32,7 +32,7 @@ const VideoComponent = () => {
         <video
           controls
           id="vidHeightWidth"                       
-          autoplay              
+          autoPlay              
           loop
           className="mb-3"                 
           muted       
@@ -42,7 +42,7 @@ const VideoComponent = () => {
         <video
           controls
           id="vidHeightWidth"                       
-          autoplay              
+          autoPlay              
           loop
           className="mb-3"                 
           muted       
@@ -53,7 +53,7 @@ const VideoComponent = () => {
         <video
           controls
           id="vidHeightWidth"                       
-          autoplay              
+          autoPlay              
           loop
           className="mb-3"                 
           muted       
@@ -63,7 +63,7 @@ const VideoComponent = () => {
         <video
           controls
           id="vidHeightWidth"                       
-          autoplay              
+          autoPlay              
           loop
           className="mb-3"                 
           muted       
@@ -73,7 +73,7 @@ const VideoComponent = () => {
         <video
           controls
           id="vidHeightWidth"                       
-          autoplay              
+          autoPlay              
           loop
           className="mb-3"                 
           muted       
