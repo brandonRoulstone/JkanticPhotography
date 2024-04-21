@@ -353,6 +353,10 @@ body{
   }
 }
 
+.icon-icon{
+  color: var(--vanillaBlac) !important;
+}
+
 #ic:nth-child(1):hover::after{
   content: "instagram";
   font-size: 10px;
@@ -392,7 +396,7 @@ body{
 }
 
 #ic:nth-child(3):hover::after{
-  content: "tikTok";
+  content: "Whatsapp";
   font-size: 10px;
   color: var(--JkanticNormalWhite);
   position: absolute;
@@ -589,6 +593,13 @@ body{
   transform: scale(105%);
 }
 
+#contactPg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
 
 @media (max-width: 1080px) {
   #divamation{
@@ -643,6 +654,12 @@ body{
     top: 0%;
     z-index: 30;
     background: var(--JkanticNormalWhite) !important;
+  }
+
+  #mediaQQ{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   #grid{

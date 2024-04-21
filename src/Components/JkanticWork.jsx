@@ -17,9 +17,8 @@ const JkanticWork = () => {
                         <div className="fs-4 d-flex justify-content-center" id="wrapBrands">
                             <PhotographyGalleryBtn />
                             <div className="pt-2 ms-auto" id="icons">
-                                <i id="ic" className="fa-brands fa-instagram mx-2"></i>
-                                <i id="ic" className="fa-brands fa-facebook mx-2"></i>
-                                <i id="ic" className="fa-brands fa-tiktok mx-2"></i>
+                                <a href="https://www.instagram.com/jkantic_/" className="icon-icon"><i id="ic" className="fa-brands fa-instagram mx-2"></i></a>
+                                <a href="https://facebook.com" className="icon-icon"><i id="ic" className="fa-brands fa-facebook mx-2"></i></a>
                             </div>
                         </div>
                     </div>
@@ -31,9 +30,8 @@ const JkanticWork = () => {
                         <div className="fs-4 d-flex justify-content-center" id="wrapBrands">
                             <VideoGalleryBtn />
                             <div className="pt-2 ms-auto" id="icons">
-                                <i id="ic" className="fa-brands fa-instagram mx-2"></i>
-                                <i id="ic" className="fa-brands fa-facebook mx-2"></i>
-                                <i id="ic" className="fa-brands fa-tiktok mx-2"></i>
+                                <a href="https://www.instagram.com/jkantic_/" className="icon-icon"><i id="ic" className="fa-brands fa-instagram mx-2"></i></a>
+                                <a href="https://facebook.com" className="icon-icon"><i id="ic" className="fa-brands fa-facebook mx-2"></i></a>
                             </div>
                         </div>
                     </div>
